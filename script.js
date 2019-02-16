@@ -206,6 +206,7 @@ function revealEmail() {
 window.sr = ScrollReveal();
 sr.reveal('.section-title', { duration: 1000, scale: 1, delay: 100 });
 sr.reveal('.card', { duration: 1000, scale: 1, delay: 300 });
+sr.reveal('.poster-img', { duration: 1000, scale: 1, delay: 300 });
 sr.reveal('.email-parent', 
 	{
 	duration: 1000,
