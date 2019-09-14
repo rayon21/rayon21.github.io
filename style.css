@@ -175,7 +175,10 @@ main h1, span {
 
 .proj__slide {
 	height: 300px !important;
+	width: auto;
 }
+
+
 
 
 .glide__controls button {
