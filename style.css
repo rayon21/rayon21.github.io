@@ -168,6 +168,62 @@ main h1, span {
 }
 
 /* PROJECTS */
+
+.glide {
+	height: 300px;
+}
+
+.proj__slide {
+	height: 300px !important;
+}
+
+
+.glide__controls button {
+	border: 0;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	top: 50%;
+	background-color: white;
+	color: #F36A63;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.02);
+}
+
+.glide__controls button:hover {
+	cursor: pointer;
+}
+
+.glide__controls button[data-glide-dir="<<"] {
+	left: 1rem;
+}
+
+.glide__controls button[data-glide-dir=">>"] {
+	right: 1rem;
+}
+
+.glide__container {
+	width: 50%;
+}
+
+.glide__bullets {
+	top: calc(100% + 1rem);
+}
+
+.glide__bullet {
+	border: 1px solid #F36A63 !important;
+}
+
+.glide__bullet--active {
+	background-color: #F36A63 !important;
+}
+
+.project__link {
+	margin-bottom: 1rem;
+	text-align: left;
+	margin-top: 0;
+}
+
 #projects {
 	background-color: #FAFAFA;
 	padding-top: 60px;
@@ -184,8 +240,10 @@ main h1, span {
 
 .card {
 	display: flex;
+	justify-content: center;
 	padding-bottom: 20px;
 	margin-bottom: 50px;
+	width: 100%;
 }
 
 .card-text {
@@ -206,6 +264,12 @@ main h1, span {
 	color: #212529;
 }
 
+.svg__symbol {
+	width: 16px;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
 .proj-img {
 	width: auto;
 	height: auto;
@@ -214,7 +278,7 @@ main h1, span {
 }
 
 .poster-img {
-	width: 70%;
+	width: 90%;
 	height: auto;
 	margin-bottom: 60px;
 }
@@ -237,7 +301,7 @@ section h1 {
 	.card {
 		flex-direction: column;
 		align-items: center;
-		width: 70%;
+		width: 90%;
 	}
 
 	.card-text {
@@ -249,6 +313,10 @@ section h1 {
 		margin-left: 0 !important;
 		text-align: center !important;
 		width: auto !important;
+	}
+
+	.glide__container {
+		width: 100%;
 	}
 }
 
@@ -381,3 +449,4 @@ footer {
 #white-font {
 	color: white;
 }
+

@@ -6,6 +6,9 @@
 	<title>Raymond Eng - Front End Developer</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="glide.core.min.css">
+	<link rel="stylesheet" href="glide.theme.min.css">
+
 </head>
 <body>
 	<div class="mouse-icon">
@@ -59,7 +62,65 @@
 		<h1 class="section-title">projects.</h1>
 		<div class="content">
 			<div class="card">
-				<img src="images/quizbizz-1.png" alt="QuizBizz home page" class="proj-img">
+				<div class="glide__container">
+					<div class="glide">
+					  <div class="glide__track" data-glide-el="track">
+					    <ul class="glide__slides">
+					      <li class="glide__slide">
+					      	<img src="images/jkcsales-dashboard.png" alt="JKCsales dashboard" class="proj__slide">
+					      </li>
+					      <li class="glide__slide">
+					      	<img src="images/jkcsales-report.png" alt="JKCsales report" class="proj__slide">
+					      </li>
+					    </ul>
+					  </div>
+					   <div class="glide__bullets" data-glide-el="controls[nav]">
+					    <button class="glide__bullet" data-glide-dir="=0"></button>
+					    <button class="glide__bullet" data-glide-dir="=1"></button>
+					   </div>
+					   <div class="glide__controls" data-glide-el="controls">
+						  <button data-glide-dir="<<"><</button>
+						  <button data-glide-dir=">>">></button>
+						</div>
+					</div>
+				</div>
+				<div class="card-text">
+					<h2>JKCsales CRM</h2>
+					<div class="tags">
+						<span class="badge">React</span>
+						<span class="badge">Node</span>
+						<span class="badge">MongoDB</span>
+						<span class="badge">AWS</span>
+					</div>
+					<div class="project__link">
+						<a href="https://jkcsales.com"><img class="svg__symbol" src="external-link-symbol.svg" alt="">jkcsales.com</a>
+					</div>
+					<p class="description">JKCsales CRM is a web application to manage service sales. Reports and points are generated from aggregated sale data.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="glide__container">
+					<div class="glide">
+					  <div class="glide__track" data-glide-el="track">
+					    <ul class="glide__slides">
+					      <li class="glide__slide">
+					      	<img src="images/quizbizz-1.png" alt="QuizBizz home page" class="proj__slide">
+					      </li>
+					      <li class="glide__slide">
+					      	<img src="images/poster.jpg" alt="QuizBizz Poster" class="proj__slide">
+					      </li>
+					    </ul>
+					  </div>
+					   <div class="glide__bullets" data-glide-el="controls[nav]">
+					    <button class="glide__bullet" data-glide-dir="=0"></button>
+					    <button class="glide__bullet" data-glide-dir="=1"></button>
+					   </div>
+					   <div class="glide__controls" data-glide-el="controls">
+						  <button data-glide-dir="<<"><</button>
+						  <button data-glide-dir=">>">></button>
+						</div>
+					</div>
+				</div>
 				<div class="card-text">
 					<h2>QuizBizz</h2>
 					<div class="tags">
@@ -71,7 +132,6 @@
 					<p class="description">QuizBizz is an interactive app where users can join rooms to answer a host's questions in realtime. This application was built on the MERN stack.</p>
 				</div>
 			</div>
-			<img src="images/poster.jpg" alt="QuizBizz Poster" class="poster-img">
 			<div class="card">
 				<img src="images/sfu-security-request-1.png" alt="SFU security request application" class="proj-img">
 				<div class="card-text">
@@ -79,6 +139,7 @@
 					<div class="tags">
 						<span class="badge">Vue.js</span>
 						<span class="badge">Spring Java</span>
+						<span class="badge">Bootstrap</span>
 					</div>
 					<p class="description">SFU Security Request System allows users to request a campus security personel for events and other occassions. Application was built by gathering requirements from client in an agile process.</p>
 				</div>
@@ -128,6 +189,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 	<script src="scrollreveal.min.js"></script>
+	<script src="glide.min.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

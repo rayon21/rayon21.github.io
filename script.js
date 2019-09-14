@@ -5,6 +5,13 @@ var xLineArray = document.querySelectorAll('.x-line')
 var menuTimeline = anime.timeline({loop: true});
 
 document.addEventListener("DOMContentLoaded", function(event) {
+	
+	const carousels = document.querySelectorAll('.glide');
+
+	[...carousels].map(carousel => {
+		new Glide(carousel, {animationTimingFunc: 'ease'}).mount();
+	})
+
     var x = anime({
 		targets: dot,
 		translateY: [
